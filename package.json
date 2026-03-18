@@ -1,6 +1,6 @@
 ﻿{
   "name": "@gadagi/design-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design system for gadagi micro-frontends",
   "main": "src/index.ts",
   "module": "src/index.ts",
