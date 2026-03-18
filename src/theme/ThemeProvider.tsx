@@ -1,12 +1,5 @@
 ﻿import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { UserPreferences } from '@adi/types';
-
-type Theme = UserPreferences['theme'];
-
-interface ThemeContextValue {
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
-}
+import { ThemeContextValue, Theme } from './interfaces/theme.interface'
 
 const ThemeContext = createContext<ThemeContextValue>({
   theme: 'system',

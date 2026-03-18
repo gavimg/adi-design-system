@@ -2,7 +2,9 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "emitDeclarationOnly": true,
-    "declarationDir": "./dist"
+    "declarationDir": "./dist/adi-design-system",
+    "moduleResolution": "node"
   },
+  "include": ["src", "node_modules/@gadagi/types/dist"],
   "exclude": ["node_modules", "dist"]
 }
