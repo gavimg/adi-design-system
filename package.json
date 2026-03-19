@@ -50,6 +50,7 @@
     "sass-loader": "^14.2.1",
     "@storybook/addon-essentials": "^8.2.2",
     "@storybook/react-webpack5": "^8.2.2",
+    "@storybook/test": "^8.2.2",
     "storybook": "^8.2.2"
   }
 }
