@@ -3,14 +3,14 @@
     "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "node",
-    "jsx": "react-jsx",
+    "outDir": "dist",
+    "emitDeclarationOnly": false,
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./dist",
     "lib": ["DOM", "ES2020"]
   },
   "include": ["src"]

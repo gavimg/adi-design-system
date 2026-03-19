@@ -1,7 +1,4 @@
-
-import { UserPreferences } from '@gadagi/types';
-
-export type Theme = UserPreferences['theme'];
+export type Theme = 'light' | 'dark' | 'system';
 
 export interface ThemeContextValue {
   theme: Theme;
