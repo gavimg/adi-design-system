@@ -20,6 +20,11 @@ Enable GitHub Pages for this repo and set:
 
 - **Source**: GitHub Actions
 
+Once the workflow completes, your Storybook will be available at:
+```text
+https://gavimg.github.io/adi-design-system/
+```
+
 ## Using Styles in Apps
 
 Import the full utility bundle:
