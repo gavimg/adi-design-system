@@ -26,7 +26,9 @@
   },
   "scripts": {
     "build": "tsc && echo 'export * from \"./src/index\";' > dist/adi-design-system/index.js",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -o docs"
   },
   "peerDependencies": {
     "react": "^19.0.0",
@@ -45,6 +47,9 @@
     "webpack": "^5.0.0",
     "webpack-cli": "^5.0.0",
     "sass": "^1.77.0",
-    "sass-loader": "^14.2.1"
+    "sass-loader": "^14.2.1",
+    "@storybook/addon-essentials": "^8.2.2",
+    "@storybook/react-webpack5": "^8.2.2",
+    "storybook": "^8.2.2"
   }
 }
