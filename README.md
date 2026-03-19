@@ -1,5 +1,7 @@
 # Gadagi Design System
 
+![Deploy Storybook](https://github.com/gavimg/adi-design-system/actions/workflows/storybook.yml/badge.svg)
+
 ## GitHub Pages (Storybook)
 
 ### Local
@@ -13,11 +15,10 @@ npm run storybook
 npm run build-storybook
 ```
 
-This outputs static files into `docs/`.  
+This outputs static files into `storybook-static/`.  
 Enable GitHub Pages for this repo and set:
 
-- **Source**: `main` branch  
-- **Folder**: `/docs`
+- **Source**: GitHub Actions
 
 ## Using Styles in Apps
 
