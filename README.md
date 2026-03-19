@@ -1,5 +1,7 @@
 # Gadagi Design System
 
+Storybook: https://gavimg.github.io/adi-design-system/
+
 ![Deploy Storybook](https://github.com/gavimg/adi-design-system/actions/workflows/storybook.yml/badge.svg)
 
 ## GitHub Pages (Storybook)
