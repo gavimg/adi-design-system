@@ -28,7 +28,7 @@
     "build": "tsc && echo 'export * from \"./src/index\";' > dist/adi-design-system/index.js",
     "dev": "tsc --watch",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o docs"
+    "build-storybook": "storybook build -o storybook-static"
   },
   "peerDependencies": {
     "react": "^19.0.0",
