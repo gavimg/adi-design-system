@@ -1,0 +1,60 @@
+.ds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--g-space-2);
+  border-radius: var(--g-radius-md);
+  font-weight: var(--g-font-weight-medium);
+  font-family: var(--g-font-sans);
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.ds-button--sm {
+  padding: var(--g-space-1) var(--g-space-3);
+  font-size: var(--g-font-size-sm);
+}
+
+.ds-button--md {
+  padding: var(--g-space-2) var(--g-space-4);
+  font-size: var(--g-font-size-base);
+}
+
+.ds-button--lg {
+  padding: var(--g-space-3) var(--g-space-6);
+  font-size: var(--g-font-size-lg);
+}
+
+.ds-button--primary {
+  background: var(--g-color-primary-600);
+  color: #fff;
+  border: none;
+}
+
+.ds-button--secondary {
+  background: transparent;
+  color: var(--g-color-primary-600);
+  border: 1px solid var(--g-color-primary-600);
+}
+
+.ds-button--danger {
+  background: var(--g-color-danger-500);
+  color: #fff;
+  border: none;
+}
+
+.ds-button--ghost {
+  background: transparent;
+  color: var(--g-color-neutral-600);
+  border: none;
+}
+
+.ds-button--full {
+  width: 100%;
+}
+
+.ds-button--loading,
+.ds-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

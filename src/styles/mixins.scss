@@ -1,0 +1,18 @@
+$g-breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+@mixin g-respond($breakpoint) {
+  @media (min-width: map-get($g-breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin g-max($breakpoint) {
+  @media (max-width: map-get($g-breakpoints, $breakpoint)) {
+    @content;
+  }
+}

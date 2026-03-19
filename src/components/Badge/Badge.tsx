@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import './Badge.css';
+import './Badge.scss';
 
 type BadgeVariant = 'default' | 'success' | 'warning' | 'danger' | 'info';
 

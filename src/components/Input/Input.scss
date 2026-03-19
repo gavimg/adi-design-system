@@ -1,0 +1,43 @@
+.ds-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--g-space-1);
+}
+
+.ds-input__label {
+  font-size: var(--g-font-size-sm);
+  font-weight: var(--g-font-weight-medium);
+  color: var(--g-color-neutral-600);
+}
+
+.ds-input__control {
+  display: block;
+  padding: var(--g-space-2) var(--g-space-3);
+  font-size: var(--g-font-size-base);
+  font-family: var(--g-font-sans);
+  border-radius: var(--g-radius-md);
+  border: 1px solid var(--g-color-neutral-200);
+  outline: none;
+  background: #fff;
+  color: var(--g-color-neutral-900);
+}
+
+.ds-input--full .ds-input__control {
+  width: 100%;
+}
+
+.ds-input--error .ds-input__control {
+  border-color: var(--g-color-danger-500);
+}
+
+.ds-input__message {
+  font-size: var(--g-font-size-xs);
+}
+
+.ds-input__message--error {
+  color: var(--g-color-danger-500);
+}
+
+.ds-input__message--hint {
+  color: var(--g-color-neutral-400);
+}

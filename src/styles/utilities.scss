@@ -1,0 +1,67 @@
+@use './variables';
+
+$g-spaces: (
+  0: var(--g-space-0),
+  1: var(--g-space-1),
+  2: var(--g-space-2),
+  3: var(--g-space-3),
+  4: var(--g-space-4),
+  5: var(--g-space-5),
+  6: var(--g-space-6),
+  8: var(--g-space-8),
+  10: var(--g-space-10),
+  12: var(--g-space-12),
+  16: var(--g-space-16)
+);
+
+@each $key, $val in $g-spaces {
+  .g-mt-#{$key} { margin-top: $val; }
+  .g-mr-#{$key} { margin-right: $val; }
+  .g-mb-#{$key} { margin-bottom: $val; }
+  .g-ml-#{$key} { margin-left: $val; }
+  .g-mx-#{$key} { margin-left: $val; margin-right: $val; }
+  .g-my-#{$key} { margin-top: $val; margin-bottom: $val; }
+
+  .g-pt-#{$key} { padding-top: $val; }
+  .g-pr-#{$key} { padding-right: $val; }
+  .g-pb-#{$key} { padding-bottom: $val; }
+  .g-pl-#{$key} { padding-left: $val; }
+  .g-px-#{$key} { padding-left: $val; padding-right: $val; }
+  .g-py-#{$key} { padding-top: $val; padding-bottom: $val; }
+
+  .g-gap-#{$key} { gap: $val; }
+  .g-gap-x-#{$key} { column-gap: $val; }
+  .g-gap-y-#{$key} { row-gap: $val; }
+}
+
+.g-bg-primary { background-color: var(--g-color-primary-500); }
+.g-bg-primary-light { background-color: var(--g-color-primary-100); }
+.g-bg-success { background-color: var(--g-color-success-500); }
+.g-bg-success-light { background-color: var(--g-color-success-100); }
+.g-bg-warning { background-color: var(--g-color-warning-500); }
+.g-bg-warning-light { background-color: var(--g-color-warning-100); }
+.g-bg-danger { background-color: var(--g-color-danger-500); }
+.g-bg-danger-light { background-color: var(--g-color-danger-100); }
+.g-bg-info { background-color: var(--g-color-info-500); }
+.g-bg-info-light { background-color: var(--g-color-info-100); }
+.g-bg-neutral { background-color: var(--g-color-neutral-100); }
+.g-bg-white { background-color: #fff; }
+
+.g-text-primary { color: var(--g-color-primary-600); }
+.g-text-success { color: var(--g-color-success-600); }
+.g-text-warning { color: var(--g-color-warning-700); }
+.g-text-danger { color: var(--g-color-danger-600); }
+.g-text-info { color: var(--g-color-info-600); }
+.g-text-muted { color: var(--g-color-neutral-500); }
+.g-text-dark { color: var(--g-color-neutral-900); }
+.g-text-light { color: var(--g-color-neutral-100); }
+
+.g-border { border: 1px solid var(--g-color-neutral-200); }
+.g-border-primary { border-color: var(--g-color-primary-500); }
+.g-border-success { border-color: var(--g-color-success-500); }
+.g-border-warning { border-color: var(--g-color-warning-500); }
+.g-border-danger { border-color: var(--g-color-danger-500); }
+.g-border-info { border-color: var(--g-color-info-500); }
+
+.g-w-full { width: 100%; }
+.g-h-full { height: 100%; }

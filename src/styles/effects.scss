@@ -1,0 +1,61 @@
+@use './variables';
+
+.g-shadow-sm { box-shadow: var(--g-shadow-sm); }
+.g-shadow { box-shadow: var(--g-shadow-md); }
+.g-shadow-lg { box-shadow: var(--g-shadow-lg); }
+
+.g-rounded-sm { border-radius: var(--g-radius-sm); }
+.g-rounded { border-radius: var(--g-radius-md); }
+.g-rounded-lg { border-radius: var(--g-radius-lg); }
+.g-rounded-full { border-radius: var(--g-radius-pill); }
+
+.g-focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--g-color-primary-200);
+}
+
+.g-hover-lift {
+  transition: transform var(--g-transition-fast);
+}
+
+.g-hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.g-press:active {
+  transform: scale(0.98);
+}
+
+.g-blur-sm {
+  filter: blur(2px);
+}
+
+.g-blur-md {
+  filter: blur(6px);
+}
+
+.g-transition-fast {
+  transition: all var(--g-transition-fast);
+}
+
+.g-transition-med {
+  transition: all var(--g-transition-med);
+}
+
+@keyframes g-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes g-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.g-animate-fade-in {
+  animation: g-fade-in 0.2s ease-out;
+}
+
+.g-animate-pulse {
+  animation: g-pulse 1.4s ease-in-out infinite;
+}

@@ -1,0 +1,29 @@
+@use './variables';
+
+.g-font-sans {
+  font-family: var(--g-font-sans);
+}
+
+.g-font-mono {
+  font-family: var(--g-font-mono);
+}
+
+.g-text-xs { font-size: var(--g-font-size-xs); }
+.g-text-sm { font-size: var(--g-font-size-sm); }
+.g-text-base { font-size: var(--g-font-size-base); }
+.g-text-lg { font-size: var(--g-font-size-lg); }
+.g-text-xl { font-size: var(--g-font-size-xl); }
+.g-text-2xl { font-size: var(--g-font-size-2xl); }
+.g-text-3xl { font-size: var(--g-font-size-3xl); }
+
+.g-font-normal { font-weight: var(--g-font-weight-normal); }
+.g-font-medium { font-weight: var(--g-font-weight-medium); }
+.g-font-semibold { font-weight: var(--g-font-weight-semibold); }
+.g-font-bold { font-weight: var(--g-font-weight-bold); }
+
+.g-text-center { text-align: center; }
+.g-text-left { text-align: left; }
+.g-text-right { text-align: right; }
+
+.g-text-underline { text-decoration: underline; }
+.g-text-no-underline { text-decoration: none; }
