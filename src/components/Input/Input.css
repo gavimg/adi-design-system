@@ -1,0 +1,43 @@
+.ds-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ds-input__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5463;
+}
+
+.ds-input__control {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+  background: #fff;
+  color: #0f172a;
+}
+
+.ds-input--full .ds-input__control {
+  width: 100%;
+}
+
+.ds-input--error .ds-input__control {
+  border-color: #dc4c4c;
+}
+
+.ds-input__message {
+  font-size: 0.75rem;
+}
+
+.ds-input__message--error {
+  color: #dc4c4c;
+}
+
+.ds-input__message--hint {
+  color: #94a3b8;
+}

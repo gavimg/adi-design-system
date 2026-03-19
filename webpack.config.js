@@ -24,7 +24,7 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.css$/,
-          use: ['css-loader'], // ❗ removed style-loader
+          use: ['style-loader', 'css-loader'],
         },
       ],
     },

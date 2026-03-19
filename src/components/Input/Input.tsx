@@ -1,5 +1,5 @@
 ﻿import React, { InputHTMLAttributes } from 'react';
-import { colors, spacing, typography } from '../../tokens';
+import './Input.css';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -14,42 +14,25 @@ export const Input: React.FC<InputProps> = ({
   hint,
   fullWidth = false,
   id,
-  style,
+  className,
   ...rest
 }) => {
   const inputId = id ?? label?.toLowerCase().replace(/\s+/g, '-');
-
-  const inputStyle: React.CSSProperties = {
-    display: 'block',
-    width: fullWidth ? '100%' : undefined,
-    padding: `${spacing[2]} ${spacing[3]}`,
-    fontSize: typography.fontSize.base,
-    fontFamily: typography.fontFamily.sans,
-    borderRadius: '6px',
-    border: `1px solid ${error ? colors.danger[500] : colors.neutral[200]}`,
-    outline: 'none',
-    background: '#fff',
-    color: colors.neutral[900],
-    ...style,
-  };
+  const wrapperClasses = ['ds-input', fullWidth ? 'ds-input--full' : null, error ? 'ds-input--error' : null]
+    .filter(Boolean)
+    .join(' ');
+  const inputClasses = ['ds-input__control', className].filter(Boolean).join(' ');
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: spacing[1] }}>
+    <div className={wrapperClasses}>
       {label && (
-        <label
-          htmlFor={inputId}
-          style={{ fontSize: typography.fontSize.sm, fontWeight: typography.fontWeight.medium, color: colors.neutral[600] }}
-        >
+        <label htmlFor={inputId} className="ds-input__label">
           {label}
         </label>
       )}
-      <input id={inputId} style={inputStyle} {...rest} />
-      {error && (
-        <span style={{ fontSize: typography.fontSize.xs, color: colors.danger[500] }}>{error}</span>
-      )}
-      {hint && !error && (
-        <span style={{ fontSize: typography.fontSize.xs, color: colors.neutral[400] }}>{hint}</span>
-      )}
+      <input id={inputId} className={inputClasses} {...rest} />
+      {error && <span className="ds-input__message ds-input__message--error">{error}</span>}
+      {hint && !error && <span className="ds-input__message ds-input__message--hint">{hint}</span>}
     </div>
   );
 };
